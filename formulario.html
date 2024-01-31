@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body style="background-color: rgb(154, 247, 231);">
+
+
+    <form action="/procesar_formulario" method="post">
+
+<h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif;">Formulario</h1>
+
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Datos personales:</legend>
+            <form action="/action_page.php">
+                <label for="fname">Nombre:</label><br>
+                <input type="text" id="fname" name="fname" value="Nombre"><br>
+                <label for="lname">Apellido:</label><br>
+                <input type="text" id="lname" name="lname" value="Apellido"><br><br>
+                <input type="submit" value="Aceptar">
+            </form>
+            <br>
+            <form>
+                <label for="birthday">Cumpleaños:</label>
+                <input type="date" id="birthday" name="birthday">
+            <form>
+                <label for="quantity">Edad:</label>
+                <input type="number" id="quantity" name="quantity" min="18" max="60">
+            </form>
+            <br>
+            <form>
+                <label for="favcolor">Elije tu color favorito:</label>
+                <input type="color" id="favcolor" name="favcolor">
+            </form>
+    </fieldset>
+</form>
+
+<br>
+
+<form action="/action_page.php">
+    <fieldset>
+        <legend>Correo electrónico:</legend>
+        <form>
+            <label for="username">Usuario:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="pwd">Contraseña:</label><br>
+            <input type="password" id="pwd" name="pwd" required> 
+        </form>
+    </fieldset>
+</form>
+
+<br>
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Elije tu sexo:</legend>
+        <form>
+            <input type="radio" id="mujer" name="fav_language" value="mujer">
+            <label for="mujer">Mujer</label><br>
+            <input type="radio" id="hombre" name="fav_language" value="hombre">
+            <label for="hombre">Hombre</label><br>
+            <input type="radio" id="otros" name="fav_language" value="otros">
+            <label for="otros">Otros</label>
+        </form>
+    </fieldset>
+</form>
+
+<br>
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Otros datos:</legend>
+        <form>
+            <input type="image" src="fotoperfil.png" alt="Submit" width="50" height="50">
+        </form>
+        <form>
+            <label for="myfile">curriculum:</label>
+            <input type="file" id="myfile" name="myfile">
+        </form>
+    </fieldset>
+</form>
+
+<br>
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Datos sobre el viaje:</legend>
+        <form>
+            <label for="bdaymonth">Mes preferido:</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+        </form>
+        <br>
+        <br>
+        <form>
+            <label for="gsearch">Busca en Google tu destino:</label>
+            <input type="search" id="gsearch" name="gsearch">
+        </form>
+        <br>
+        <form>
+            <label for="homepage">Pon tu página web:</label>
+            <input type="url" id="homepage" name="homepage">
+        </form>
+    </fieldset>
+</form>
+
+<br>
+
+<form action="/action_page.php">
+    <fieldset>
+      <legend>Datos sobre el formulario:</legend>
+      <form>
+        <label for="vol">Puntua el cuestionario:</label>
+        <input type="range" id="vol" name="vol" min="0" max="10">
+    </form>
+    <br>
+    <br>
+    <form>
+        <label for="birthdaytime">Fecha y hora de envío de formulario:</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+    </form>
+    </fieldset>
+</form>
+<br>
+<button type="submit">Terminar y Enviar</button>
+
+</body>
+</html>
